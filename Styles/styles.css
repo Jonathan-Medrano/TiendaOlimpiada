@@ -1,0 +1,279 @@
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, #eeeeee, #cccccc, #777777, #444444);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Títulos */
+h2 {
+    color: #222;
+    font-size: 26px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/* Estilos para el listado de productos y carrito */
+.products, .cart {
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+ul{
+    margin-bottom: 0;
+}
+
+.products ul, .cart ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+.products ul, .cart ul {
+    max-width: 1000px; /* Ajusta este valor según sea necesario */
+    margin: auto; /* Centra el contenedor ul dentro de .products o .cart */
+}
+.products li, .cart li {
+    background-color: #fafafa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.products li:hover, .cart li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.products li h3, .cart li h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.products li p, .cart li p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.products li a, .cart li a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: auto;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.products li a:hover, .cart li a:hover {
+    background-color:#2980b9; /* Cambiar color al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada en hover */
+}
+.products li a:hover, .cart li a:active {
+    background-color: #1c5980; /* Color al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña al hacer clic */
+    transform: translateY(2px); /* Efecto de presionar */
+}
+/* Imagenes en productos */
+.products li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el carrito de compras */
+.cart p {
+    font-weight: bold;
+    font-size: 18px;
+    color: #d9534f;
+    text-align: right;
+    margin-top: 10px;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+/* Alerta de éxito */
+.success-alert {
+    padding: 15px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #4caf50; /* Color verde para indicar éxito */
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.botoncompra {
+    display: inline-block;
+    padding: 12px 24px; /* Tamaño del botón */
+    background-color: #3498db; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    text-align: center;
+    text-decoration: none; /* Eliminar subrayado */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    transition: background-color 0.2s, box-shadow 0.2s; /* Suaves transiciones */
+}
+
+.botoncompra:hover {
+    background-color: #2980b9; /* Color de fondo en hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada en hover */
+}
+
+.botoncompra:active {
+    background-color: #1c5980; /* Color al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña al hacer clic */
+    transform: translateY(2px); /* Efecto de presionar */
+}
+
+/* Estilos mejorados para la barra de navegación */
+nav {
+    background: linear-gradient(135deg, #34495e, #2c3e50); /* Gradiente azul oscuro */
+    overflow: hidden;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #ecf0f1; /* Color claro y suave para el texto */
+    text-align: center;
+    padding: 12px 20px; /* Espaciado ajustado */
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 50px; /* Bordes completamente redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones más suaves */
+}
+
+nav a:hover {
+    background-color: #2980b9; /* Azul claro en hover */
+    color: #ecf0f1; /* Mantiene el texto claro en hover */
+}
+
+nav .right {
+    float: right;
+}
+
+nav .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ecf0f1; /* Color diferente para destacar la marca */
+    transition: background-color 0.2s, color 0.2s; /* Transiciones más suaves */
+}
+
+
+nav a.active {
+    background-color: #27ae60; /* Verde más profundo y elegante */
+    color: white;
+}
+
+
+.admin-section {
+    margin: auto;
+    text-align: center;
+}
+
+.admin-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.admin-section form {
+    display: flex;
+    flex-direction: row;
+}
+
+.admin-section form input[type="text"], .input-orders {
+    margin: auto;
+    width: calc(20% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #2228;
+    border-radius: 4px 4px 0 0;
+    outline: none;
+}
+.admin-section form input[type="text"]:focus, .input-orders:focus {
+    background-color: #ccc8;
+}
+.button-orders {
+    margin-top: 10px;
+    max-width: 40%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.button-orders:hover {
+    background-color:#2980b9; /* Cambiar color al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada en hover */
+}
+.button-orders:active {
+    background-color: #1c5980; /* Color al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña al hacer clic */
+    transform: translateY(2px); /* Efecto de presionar */
+}
+.admin-section form button, .admin-section-button {
+    margin-top: 10px;
+    max-width: 40%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.admin-section form button:hover, .admin-section-button:hover {
+    background-color:#2980b9; /* Cambiar color al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada en hover */
+}
+.admin-section form button:active, .admin-section-button:active {
+    background-color: #1c5980; /* Color al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña al hacer clic */
+    transform: translateY(2px); /* Efecto de presionar */
+}
+
+.admin-section form button:hover {
+    background-color: #0056b3;
+}

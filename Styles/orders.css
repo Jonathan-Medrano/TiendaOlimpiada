@@ -1,0 +1,127 @@
+/* Estilos para la página de pedidos */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, #eeeeee, #cccccc, #777777, #444444);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Títulos */
+h2 {
+    color: #222;
+    font-size: 26px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/* Listado de pedidos */
+.orders ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Estilos para cada pedido */
+.orders li {
+    background-color: #fafafa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.orders li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para el subtítulo del pedido */
+.orders li h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* Estilos para la información del pedido */
+.orders li p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Estilos para los artículos dentro de un pedido */
+.orders li ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.orders li ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Estado del pedido */
+.order-status {
+    font-weight: bold;
+}
+
+/* Estilos mejorados para la barra de navegación */
+nav {
+    background: linear-gradient(135deg, #34495e, #2c3e50); /* Gradiente azul oscuro */
+    overflow: hidden;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #ecf0f1; /* Color claro y suave para el texto */
+    text-align: center;
+    padding: 12px 20px; /* Espaciado ajustado */
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 50px; /* Bordes completamente redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones más suaves */
+}
+
+nav a:hover {
+    background-color: #2980b9; /* Azul claro en hover */
+    color: #ecf0f1; /* Mantiene el texto claro en hover */
+}
+
+nav .right {
+    float: right;
+}
+
+nav .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ecf0f1; /* Color diferente para destacar la marca */
+    transition: background-color 0.2s, color 0.2s; /* Transiciones más suaves */
+}
+
+
+nav a.active {
+    background-color: #27ae60; /* Verde más profundo y elegante */
+    color: white;
+}

@@ -1,0 +1,155 @@
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, #eeeeee, #cccccc, #777777, #444444);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+h2 {
+    color: #222;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    display: inline-block;
+}
+
+/* Estilos mejorados para la barra de navegación */
+nav {
+    background: linear-gradient(135deg, #34495e, #2c3e50); /* Gradiente azul oscuro */
+    overflow: hidden;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #ecf0f1; /* Color claro y suave para el texto */
+    text-align: center;
+    padding: 12px 20px; /* Espaciado ajustado */
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 50px; /* Bordes completamente redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones más suaves */
+}
+
+nav a:hover {
+    background-color: #2980b9; /* Azul claro en hover */
+    color: #ecf0f1; /* Mantiene el texto claro en hover */
+}
+
+nav .right {
+    float: right;
+}
+
+nav .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ecf0f1; /* Color diferente para destacar la marca */
+    transition: background-color 0.2s, color 0.2s; /* Transiciones más suaves */
+}
+
+
+nav a.active {
+    background-color: #27ae60; /* Verde más profundo y elegante */
+    color: white;
+}
+
+
+p {
+    text-align: center;
+}
+/*Contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    position: relative;
+    text-align: center;
+}
+
+/* Formulario de login y registro */
+.login, .register {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Línea vertical */
+.v-line {
+    border-left: 1px solid #2228;
+    height: 80%; /* Altura del 80% */
+    position: absolute;
+    left: 50%; /* Centramos horizontalmente */
+    top: 10%; /* Centramos verticalmente respecto al 80% de la altura */
+    transform: translateX(-50%);
+}
+
+/* Asegurarse de que el contenedor tenga suficiente altura */
+.container {
+    min-height: 400px; /* Ajusta según tus necesidades */
+}
+
+
+form input {
+    width: calc(70% - 22px);
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #2228;
+    border-radius: 4px 4px 0 0;
+    outline: none;
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+form input:focus {
+    background-color: #ccc8;
+}
+
+form button{
+    width: 40%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color:#2980b9; /* Cambiar color al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada en hover */
+}
+.form button:active {
+    background-color: #1c5980; /* Color al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña al hacer clic */
+    transform: translateY(2px); /* Efecto de presionar */
+}
+.success-alert {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 10px;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+}
